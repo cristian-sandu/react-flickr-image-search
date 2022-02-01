@@ -1,0 +1,20 @@
+.input {
+  width: 400px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    width: 90%;
+    height: 40px;
+    font-size: 22px;
+  }
+}

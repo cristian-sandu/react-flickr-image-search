@@ -1,0 +1,26 @@
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0 rgb(0, 0, 0 / 40%);
+}
+
+.image:hover {
+  box-shadow: 1px 1px 10px 0 rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.loaded {
+  animation: easy-load-animation 700ms ease-in-out;
+}
+
+@keyframes easy-load-animation {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
