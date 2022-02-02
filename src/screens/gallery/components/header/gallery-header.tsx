@@ -5,7 +5,7 @@ import styles from './gallery-header.module.scss'
 
 type Properties = {
   onChange: (keyword: string) => void
-  isFetching: boolean
+  isFetching?: boolean
 }
 
 const SEARCH_INPUT_DEBOUNCE_TIME_MS = 1000
@@ -28,6 +28,7 @@ const GalleryHeader: FC<Properties> = ({ isFetching, onChange }) => {
     <div className={styles['input-container']}>
       <input
         className={styles.input}
+        data-testid="gallery-header-input"
         onChange={handleChange}
         disabled={isFetching}
         placeholder="Search image"
